@@ -6,6 +6,11 @@ from backend.models import Category
 class CategoryAdmin(admin.ModelAdmin):
 
     # list display
-    list_display = ('name','id')
+    # list_display = ('name','id')
+
+    list_display = ('name', 'id')
+
+    #search fields
+    search_fields = ('name',)
 
 admin.site.register(Category,CategoryAdmin)
