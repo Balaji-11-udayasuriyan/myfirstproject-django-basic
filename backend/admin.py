@@ -13,4 +13,9 @@ class CategoryAdmin(admin.ModelAdmin):
     #search fields
     search_fields = ('name',)
 
+    # add filter for name field
+    list_filter = ('name',)
+
+
+
 admin.site.register(Category,CategoryAdmin)
